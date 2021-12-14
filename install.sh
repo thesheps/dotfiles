@@ -2,7 +2,7 @@
 
 sudo apt update
 sudo apt upgrade
-sudo apt install zsh -y
+sudo apt install zsh git-all -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 gh repo clone romkatv/powerlevel10k "$ZSH_CUSTOM/themes/powerlevel10k"
