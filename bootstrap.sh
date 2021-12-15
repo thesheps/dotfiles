@@ -5,5 +5,5 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 ln -sf "$HOME/.dotfiles/.p10k.zsh" "$HOME/.p10k.zsh"
 ln -sf "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
 
-chsh -s "$(which zsh)"
+chsh -s "$(which zsh)" pi
 exec zsh
