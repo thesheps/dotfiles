@@ -8,5 +8,6 @@ elif [ "$(uname)" == "Linux" ]; then
     sudo apt install zsh git-all -q
 fi
 
-if cd "$HOME/.dotfiles"; then git pull; else git clone https://github.com/thesheps/dotfiles "$HOME/.dotfiles"; fi
+rm -rf "$HOME/.dotfiles"
+git clone https://github.com/thesheps/dotfiles "$HOME/.dotfiles"
 sh "$HOME/.dotfiles/bootstrap.sh"
