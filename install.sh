@@ -5,7 +5,7 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(uname)" == "Linux" ]; then
     sudo apt update
     sudo apt upgrade
-    sudo apt install zsh git-all -y
+    sudo apt install zsh git-all -q
 fi
 
 git clone https://github.com/thesheps/dotfiles "$HOME/.dotfiles"
